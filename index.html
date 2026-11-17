@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arseny Hofman — CV</title>
+  <style>
+    :root {
+      --text-primary: #1a202c;
+      --text-secondary: #4a5568;
+      --accent: #1e3a8a;
+      --border-color: #cbd5e1;
+      --bg-page: #f8fafc;
+      --bg-sheet: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-primary);
+      background-color: var(--bg-page);
+      line-height: 1.42;
+      font-size: 10pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-container {
+      max-width: 210mm;
+      margin: 24px auto;
+      background: var(--bg-sheet);
+      padding: 14mm 16mm;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .header-left h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+      line-height: 1.15;
+    }
+
+    .header-left .subtitle {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 9pt;
+      color: var(--text-secondary);
+    }
+
+    .header-right a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .header-right a:hover {
+      text-decoration: underline;
+    }
+
+    .header-links span {
+      margin: 0 5px;
+      color: var(--border-color);
+    }
+
+    section {
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+    }
+
+    .summary-text {
+      font-size: 9.5pt;
+      color: var(--text-primary);
+      text-align: justify;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3px;
+      font-size: 9.2pt;
+    }
+
+    .skill-row strong {
+      color: var(--text-primary);
+    }
+
+    .job {
+      margin-bottom: 9px;
+      page-break-inside: avoid;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .job-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .job-company {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .job-date {
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .job-stack {
+      font-size: 8.6pt;
+      color: var(--text-secondary);
+      font-style: italic;
+      margin-bottom: 3px;
+    }
+
+    ul.bullets {
+      list-style-type: disc;
+      margin-left: 16px;
+      font-size: 9.3pt;
+    }
+
+    ul.bullets li {
+      margin-bottom: 2px;
+    }
+
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 8.6pt;
+      background: #f1f5f9;
+      padding: 0 3px;
+      border-radius: 3px;
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm 14mm;
+      }
+
+      body {
+        background: #ffffff;
+        font-size: 9.5pt;
+        line-height: 1.38;
+      }
+
+      .page-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      a {
+        color: var(--text-primary) !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="header-left">
+        <h1>Arseny Hofman</h1>
+        <div class="subtitle">Engineering Team Lead | Chief Technology Officer | Senior Python Architect</div>
+      </div>
+      <div class="header-right">
+        <div class="header-links">
+          <a href="https://aruseni.com">aruseni.com</a>
+          <span>|</span>
+          <a href="https://www.linkedin.com/in/aruseni">linkedin.com/in/aruseni</a>
+          <span>|</span>
+          <a href="https://github.com/aruseni">github.com/aruseni</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Executive Summary</h2>
+      <p class="summary-text">
+        Engineering leader and backend architect with 19 years of software development experience bridging business strategy and technical execution. Proven track record of assembling and leading R&amp;D and distributed engineering teams, taking complex products from concept to commercial launch, and scaling high-load web platforms. Prioritizes thorough requirements discovery and architectural clarity upfront to deliver maintainable, high-quality code, while driving hands-on mentorship, rigorous code review, and offensive/defensive application security.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Competencies &amp; Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-row"><strong>Backend &amp; Architecture:</strong> Python, Django, Django REST Framework, FastAPI, Flask, SQLAlchemy, SQLModel, Tornado, Werkzeug, Celery, RabbitMQ, BeautifulSoup, Requests, REST APIs, GraphQL, JSON-RPC, WebSockets</div>
+        <div class="skill-row"><strong>Frontend:</strong> JavaScript, Vue.js, Alpine.js, Ember.js, Vite, CoffeeScript, jQuery, DataTables, D3.js, HTML, CSS, SASS</div>
+        <div class="skill-row"><strong>Databases &amp; Storage:</strong> PostgreSQL (PostGIS), MySQL (Master-Slave/Master-Master replication), MongoDB (MongoEngine), Redis (Pub/Sub), BigchainDB, IPFS</div>
+        <div class="skill-row"><strong>Infrastructure, Media &amp; Security:</strong> GNU/Linux, Docker, Kubernetes (GKE), Rancher, AWS (EC2, S3, RDS, EBS, Amplify), GCP, Nginx, HAProxy, Gunicorn, Supervisor, Chef, Jenkins, FFmpeg, Application Security (penetration testing, XSS/CSRF/SQLi mitigation, TOTP 2FA)</div>
+        <div class="skill-row"><strong>Leadership &amp; Process:</strong> Team Building &amp; Hiring, Technical Roadmapping, Architecture Design, Code Review, Pair Programming, Developer Mentorship, Technical Documentation</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Lead Engineer, Technical Interviewer &amp; Mentor</span> — <span class="job-company">hvirtka &amp; Independent Consulting</span></div>
+          <div class="job-date">2024–2026</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, JavaScript, Vite, Alpine.js, PostgreSQL, Redis</div>
+        <ul class="bullets">
+          <li>Architected and launched <strong>hvirtka</strong>, an online social networking platform built from scratch with a directory of user wishes, location-based filtering, fixed-duration premium plan purchases, and end-to-end production infrastructure.</li>
+          <li>Built a custom passwordless authentication system from scratch with strict rate-limiting on both code retrieval and verification entry attempts.</li>
+          <li>Wrote efficient Django ORM queries and used <code>Collate</code> in PostgreSQL for accurate Ukrainian sorting.</li>
+          <li>Conducted technical interviews for hiring companies and mentored Junior, Middle, and Senior software engineers in architecture, code quality, and career growth.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Engineering Team Lead</span> — <span class="job-company">PYGIO (Client: Spacely) &amp; Independent Projects</span></div>
+          <div class="job-date">2023</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, FastAPI, SQLAlchemy, PostgreSQL</div>
+        <ul class="bullets">
+          <li>Led the engineering team developing a workflow optimization platform for marketing professionals, translating business priorities into scalable backend services.</li>
+          <li>Delivered backend engineering for <strong>Spacely</strong> at <strong>PYGIO</strong> and built <strong>Available IT Experts</strong>, an IT talent directory and job search platform connecting engineers with international recruiters.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Chief Technology Officer (CTO)</span> — <span class="job-company">vidby</span></div>
+          <div class="job-date">2021–2022</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, Django REST Framework, Celery, Redis, PostgreSQL, FFmpeg, BeautifulSoup, Requests, JavaScript, Vue.js, GCP (Kubernetes)</div>
+        <ul class="bullets">
+          <li>Assembled and led the R&amp;D engineering team (backend, frontend, QA, and DevOps) to build and commercially launch an AI-powered video translation, dubbing, and subtitle platform supporting 70+ languages within 7 months.</li>
+          <li>Architected the core backend, REST APIs (Swagger/Redoc), and media-processing pipelines integrating multi-provider STT/TTS engines (Google, Amazon, Microsoft Azure), Voice Activity Detection (VAD), speaker diarization, and speech tempo/silence normalization.</li>
+          <li>Built the Telegram bot for automated voice/video translation and transcription with integrated payments, and implemented security controls including TOTP two-factor authentication.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Python Team Lead &amp; Senior Backend Engineer</span> — <span class="job-company">Tatau, WorkPort, Loppeonline &amp; WorkNest</span></div>
+          <div class="job-date">2018–2020</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, Django REST Framework, Celery, BeautifulSoup, Requests, PostgreSQL/PostGIS, BigchainDB, IPFS, Blockchain, AWS</div>
+        <ul class="bullets">
+          <li><strong>Tatau — Python Team Lead (2018):</strong> Led the Python team developing an open-source, blockchain-based distributed neural network platform that pooled underutilized hardware for high-performance parallel deep learning tasks; owned architecture decisions, node/worker task-reassignment protocols, code reviews, and direct Product Owner alignment.</li>
+          <li><strong>WorkPort — Sole Backend Architect:</strong> Owned the backend architecture and AWS deployment for a Polish job search, insurance, and migrant services platform; integrated multiple third-party APIs for payment processing, mobile top-ups, insurance ordering, parcel logistics, and bus ticketing.</li>
+          <li><strong>Loppeonline &amp; WorkNest:</strong> Engineered distributed Python/Celery/BeautifulSoup automation pipelines simulating complex user behavior at scale, and built an ICO/fintech backend integrating multiple cryptocurrency blockchains, wallet management, and automated token-credit calculations.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Senior Software Engineer</span> — <span class="job-company">Hudya &amp; Attagene</span></div>
+          <div class="job-date">2016–2017</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, Django REST Framework, Flask, Celery, MySQL, PostgreSQL, Docker, Rancher, Jenkins</div>
+        <ul class="bullets">
+          <li><strong>Hudya:</strong> Developed backend microservices, REST APIs, technical documentation, and automated tests within a large distributed team for a digital Norwegian electricity supply and consumption-control platform.</li>
+          <li><strong>Attagene:</strong> Maintained and extended two Python/Flask platforms for a North Carolina biotech company (Research Triangle Park)—an internal laboratory information management system tracking DNA samples, sequencing runs, and organism taxonomies, and a customer-facing portal for sample registration and bioinformatics reports.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Senior Software Engineer</span> — <span class="job-company">Mindojo</span></div>
+          <div class="job-date">2015</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, Django REST Framework, Werkzeug, Celery, MongoEngine, MongoDB, JavaScript, CoffeeScript, Ember.js, SASS</div>
+        <ul class="bullets">
+          <li>Developed frontend (<code>Ember.js</code>, <code>CoffeeScript</code>) and backend (<code>Python</code>, <code>Django</code>, <code>MongoDB</code>) features, refactored core modules, and built internal tooling for an adaptive online learning platform powering exam-prep courses for <strong>Bloomberg</strong> (CFA) and <strong>The Economist</strong> (GMAT, GRE).</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Lead Software Engineer &amp; DevOps</span> — <span class="job-company">IntelsOnline</span></div>
+          <div class="job-date">2011–2014</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, Tornado, Celery, RabbitMQ, BeautifulSoup, MySQL, PostgreSQL, MongoDB, Redis, AWS (EC2, RDS, EBS), Jenkins, JavaScript, jQuery, DataTables</div>
+        <ul class="bullets">
+          <li>Led an engineering team building <strong>poiskznakov</strong>, a high-performance platform for searching pending and registered trademarks and monitoring real-time database changes, while coaching developers in maintainable code practices.</li>
+          <li>Architected a distributed WebSocket chat system using Tornado workers and Redis/RabbitMQ message queues, built internal database/parser management tools, and managed AWS infrastructure (EC2, RDS, automated EBS snapshots).</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Lead Python Engineer</span> — <span class="job-company">r00 / Whitescape (Client: Buzzoola)</span></div>
+          <div class="job-date">2010–2011</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, Celery, RabbitMQ, FFmpeg, PostgreSQL, MongoDB, Chef, AWS (EC2, S3), JavaScript, jQuery</div>
+        <ul class="bullets">
+          <li>Led a distributed team of ~10 engineers building <strong>Buzzoola</strong>, a SaaS video distribution and analytics platform that automatically uploaded publisher videos to dozens of hosting platforms and aggregated viewership statistics.</li>
+          <li>Architected distributed FFmpeg encoding pipelines on AWS EC2/S3, programmed and documented the mobile REST API, and consulted the London mobile development team.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div><span class="job-title">Software Engineer &amp; System Administrator</span> — <span class="job-company">Clodo, Cyberhead &amp; Contract Work</span></div>
+          <div class="job-date">2007–2010</div>
+        </div>
+        <div class="job-stack">Stack: Python, Django, PHP, PostgreSQL, MySQL, XEN, VirtualBox, Linux, Apache, Nginx, JavaScript, jQuery, HTML, CSS</div>
+        <ul class="bullets">
+          <li><strong>Clodo — System Administrator:</strong> Administered Linux servers, virtualization (XEN, VirtualBox), and database replication (MySQL master-slave/master-master, PostgreSQL) for a cloud hosting provider, advising clients on infrastructure setup and optimization.</li>
+          <li><strong>Cyberhead &amp; Web Development:</strong> Delivered full-stack web applications including a custom Django e-commerce store implementing nested-set category trees, a film festival website, and an interactive exhibition catalogue.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Highlights &amp; Community</h2>
+      <ul class="bullets">
+        <li><strong>Mentorship &amp; Technical Hiring:</strong> 6+ years mentoring software developers and QA engineers—guiding mentees from zero IT background to production-ready engineers—and conducting technical interviews for engineering teams.</li>
+        <li><strong>Open Source &amp; Technical Writing:</strong> Author of 12 open-source projects on GitHub, contributor of bug fixes and improvements across external open-source repositories including <code>google/making_with_ml</code>, and creator of educational Python/Django screencasts and technical articles including an in-depth guide to the HTTP protocol with 1.6M+ views.</li>
+        <li><strong>Community Impact:</strong> Active Stack Overflow contributor whose answers in JavaScript, Python, and Django have helped 849.9K+ developers.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
